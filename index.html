@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Swiggy</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fc8019;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 8px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .logo img {
+      width: 100px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #fc8019;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #e56a00;
+    }
+
+    .link {
+      text-align: center;
+      margin-top: 15px;
+      font-size: 13px;
+    }
+
+    .link a {
+      color: #fc8019;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/1/12/Swiggy_logo.svg" alt="Swiggy Logo">
+    </div>
+    <h2>Login to Swiggy</h2>
+    <form method="POST" action="login.php">
+      <input type="text" name="email" placeholder="Phone number or Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">LOGIN</button>
+    </form>
+    <div class="link">
+      <p>New to Swiggy? <a href="https://www.swiggy.com">Create an account</a></p>
+    </div>
+  </div>
+</body>
+</html>
